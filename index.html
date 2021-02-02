@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
             <a class="navbar-brand" href="#"> <img src="imagenes/logo.png"  class="logo-brand" alt="logo"> </a>
-            <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button" >
+            <button class="navbar-toggler right" data-target="#menu" data-toggle="collapse" type="button" >
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse col-sm-6" id="menu">
@@ -46,8 +46,9 @@
                   </ul>
                 </div>
             </div>
-                <!--boton modal -->
-                   <button type="button col-sm-6" class= "btn btn-primary" data-toggle="modal" data-target="#mimodal"> Login </button>
+           <div class="d-flex flex-row justify-content">
+                <!--boton modal 1-->
+                   <button type="button col-sm-6" class= "btn btn-primary pull right btn-space" data-toggle="modal" data-target="#mimodal"> Login </button>
                 <!--el modal-->
                 <div class="modal fade" id="mimodal">
                   <div class="modal-dialog">
@@ -80,7 +81,44 @@
                     </div>
                   </div>
                </div>
-            </form>      
+            </form>
+          
+            <!--boton modal 2-->
+            <button type="button col-sm-6" class= "btn btn-secondary pull right btn-space" data-toggle="modal" data-target="#mimodal"> Registro </button>
+            <!--el modal-->
+            <div class="modal fade" id="mimodal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                   <!--cabecera-->
+                   <div class="modal-header ">
+                   <h4 class="modal-title ml-4 ">Login</h4>    
+                   <button type="button" class="close" data-dismiss="modal"> &times;</button>
+                   </div>
+                   <!--cuerpo-->
+                   <form action="/action_page.php ">
+                       <div class="form-group mr-5 ml-5 mt-2" >
+                         <label for="email">Email address:</label>
+                         <input type="email" class="form-control" placeholder="Enter email" id="email">
+                       </div>
+                       <div class="form-group mr-5 ml-5">
+                         <label for="pwd">Password:</label>
+                         <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                       </div>
+                       <div class="form-group ml-5 form-check  ">
+                         <label class="form-check-label ">
+                           <input class="form-check-input " type="checkbox"> Remember me
+                         </label>
+                       </div>                      
+                   <!--pie de modal-->
+                   <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                       <button type="button" class="btn btn-danger" data-dismiss="modal"> Cerrar</button> 
+                   </div>
+                </div>
+              </div>
+           </div>
+        </form>      
+      </div>
           </nav>
     <section class="Testimonial">
         <div class="container">

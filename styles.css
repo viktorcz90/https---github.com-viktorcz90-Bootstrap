@@ -24,11 +24,8 @@ margin-top:30px;
     outline: none;
     box-shadow: none;
 }
-
-.btn-group
-{
-margin-left:40px;
-margin-right: 40px;
+.btn-space{
+  margin-right: 4px;
 }
 .carousel{
    margin-top: 10px;
